@@ -1,0 +1,96 @@
+/**
+ *  Below is listener example which is listen before web element's command execution.
+ *  
+ */
+
+package com.listenersample;
+
+import java.util.Arrays;
+
+import org.openqa.selenium.remote.DriverCommand;
+import org.openqa.selenium.remote.Response;
+
+import com.qmetry.qaf.automation.ui.webdriver.CommandTracker;
+import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
+import com.qmetry.qaf.automation.ui.webdriver.QAFWebElementCommandAdapter;
+import com.qmetry.qaf.automation.util.StringUtil;
+
+public class WebElementListener extends QAFWebElementCommandAdapter {
+
+	/**
+	 * Below method will be called before web element's command execution.
+	 * 
+	 * For example,
+	 * 
+	 * If element is visible then click.so you can check visibility in
+	 * beforCommand and wait for visible.
+	 * 
+	 * 
+	 * web driver send keys will append the text box, so each time we need to
+	 * first call clear command and then use send keys command. so you can write
+	 * {@link element#clear()}
+	 * 
+	 * 
+	 * @param element
+	 * @param commandTracker
+	 */
+
+	@Override
+	public void beforeCommand(QAFExtendedWebElement element,
+			CommandTracker commandTracker) {
+		/*
+		 * if (element.isPresent()) element.waitForVisible();
+		 */
+		if (commandTracker.getCommand().equalsIgnoreCase(DriverCommand.CLICK)) {
+			if (element.isPresent() && !element.isEnabled())
+				element.waitForVisible();
+		}
+		if (commandTracker.getCommand().equalsIgnoreCase(
+				DriverCommand.SEND_KEYS_TO_ELEMENT)) {
+			element.clear();
+			String val = String.valueOf(commandTracker.getParameters().get(
+					"value"));
+			System.out.println("\n Before command" + val);
+
+			if (StringUtil.isBlank(val)) {
+				System.out.println("\n Returning value of sendKeysToElement");
+				commandTracker.setResponce(new Response());
+			}
+		}
+
+	}
+
+	/**
+	 * Below method will be called after web element's command execution.
+	 * 
+	 * Here it will print command name with parameter.
+	 */
+
+	@Override
+	public void afterCommand(QAFExtendedWebElement element,
+			CommandTracker commandTracker) {
+		super.afterCommand(element, commandTracker);
+		System.out.println(commandTracker.getCommand() + " has parameter:"
+				+ commandTracker.getParameters());
+	}
+
+	/**
+	 * Below method will be called on web element's command execution fail.
+	 * 
+	 * Here exception will set as null on failure of web element's command execution.
+	 */
+
+	@Override
+	public void onFailure(QAFExtendedWebElement element,
+			CommandTracker commandTracker) {
+		super.onFailure(element, commandTracker);
+		commandTracker.setException(null);
+	}
+
+	@Override
+	protected void execute(QAFExtendedWebElement element,
+			CommandTracker commandTracker) {
+		super.execute(element, commandTracker);
+	}
+
+}

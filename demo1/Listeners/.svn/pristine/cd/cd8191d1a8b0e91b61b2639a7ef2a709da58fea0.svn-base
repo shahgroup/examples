@@ -1,0 +1,17 @@
+18:33:27 scenario.file.loc[Ljava.lang.String;@4b553d26
+18:33:27 loading text file: D:\Projects\QAS\samples\final\training\ListenerSample\scenarios\suite1.bdd
+18:33:28 total test found: 1
+18:33:30 
+
+Executing scenario: WebDriver Listener Scenario - Listener Description
+18:33:30 Invoking Teststep: GIVEN get http://www.google.com with arguments: [http://www.google.com]
+18:33:38 Completed Teststep: GIVEN get http://www.google.com with arguments: [http://www.google.com]
+18:33:38 Invoking Teststep: WHEN sendKeys Qmetry Automation Studio into text.google.search with arguments: [Qmetry Automation Studio, text.google.search]
+18:33:39 Completed Teststep: WHEN sendKeys Qmetry Automation Studio into text.google.search with arguments: [Qmetry Automation Studio, text.google.search]
+18:33:39 Invoking Teststep: WHEN sendKeys Infostretch into text.google.search with arguments: [Infostretch, text.google.search]
+18:33:39 Completed Teststep: WHEN sendKeys Infostretch into text.google.search with arguments: [Infostretch, text.google.search]
+18:33:39 Invoking Teststep: And submit submit.google.search with arguments: [submit.google.search]
+18:33:39 Completed Teststep: And submit submit.google.search with arguments: [submit.google.search]
+18:33:39 Invoking Teststep: Then assert partialLink=Infostretch is present with arguments: [partialLink=Infostretch]
+18:33:42 Completed Teststep: Then assert partialLink=Infostretch is present with arguments: [partialLink=Infostretch]
+18:33:42 Competed scenario: WebDriver Listener Scenario with status SUCESS

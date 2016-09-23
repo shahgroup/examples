@@ -1,0 +1,37 @@
+19:47:38 scenario.file.loc[Ljava.lang.String;@4b553d26
+19:47:38 loading text file: D:\Projects\QAS\samples\final\training\ListenerSample\scenarios\suite1.bdd
+19:47:39 total test found: 1
+19:47:41 
+
+Executing scenario: WebDriver Listener Scenario - Listener Description
+19:47:41 Invoking Teststep: GIVEN get http://www.google.com with arguments: [http://www.google.com]
+19:47:41 Invoking Teststep: GIVEN get http://www.google.com with arguments: [http://www.google.com]
+19:47:41 Completed Teststep: GIVEN get http://www.google.com with arguments: [http://www.google.com]
+19:47:50 Completed Teststep: GIVEN get http://www.google.com with arguments: [http://www.google.com]
+19:47:50 Invoking Teststep: GIVEN get http://www.google.com[8sec] with arguments: [http://www.google.com]
+19:47:50 Completed Teststep: GIVEN get http://www.google.com[8sec] with arguments: [http://www.google.com]
+19:47:50 Invoking Teststep: WHEN sendKeys Qmetry Automation Studio into text.google.search with arguments: [Qmetry Automation Studio, text.google.search]
+19:47:50 Invoking Teststep: WHEN sendKeys Qmetry Automation Studio into text.google.search with arguments: [Qmetry Automation Studio, text.google.search]
+19:47:50 Completed Teststep: WHEN sendKeys Qmetry Automation Studio into text.google.search with arguments: [Qmetry Automation Studio, text.google.search]
+19:47:50 Completed Teststep: WHEN sendKeys Qmetry Automation Studio into text.google.search with arguments: [Qmetry Automation Studio, text.google.search]
+19:47:50 Invoking Teststep: WHEN sendKeys Qmetry Automation Studio into text.google.search[0sec] with arguments: [Qmetry Automation Studio, text.google.search]
+19:47:50 Completed Teststep: WHEN sendKeys Qmetry Automation Studio into text.google.search[0sec] with arguments: [Qmetry Automation Studio, text.google.search]
+19:47:50 Invoking Teststep: WHEN sendKeys Infostretch into text.google.search with arguments: [Infostretch, text.google.search]
+19:47:50 Invoking Teststep: WHEN sendKeys Infostretch into text.google.search with arguments: [Infostretch, text.google.search]
+19:47:50 Completed Teststep: WHEN sendKeys Infostretch into text.google.search with arguments: [Infostretch, text.google.search]
+19:47:51 Completed Teststep: WHEN sendKeys Infostretch into text.google.search with arguments: [Infostretch, text.google.search]
+19:47:51 Invoking Teststep: WHEN sendKeys Infostretch into text.google.search[0sec] with arguments: [Infostretch, text.google.search]
+19:47:51 Completed Teststep: WHEN sendKeys Infostretch into text.google.search[0sec] with arguments: [Infostretch, text.google.search]
+19:47:51 Invoking Teststep: And submit submit.google.search with arguments: [submit.google.search]
+19:47:51 Invoking Teststep: And submit submit.google.search with arguments: [submit.google.search]
+19:47:51 Completed Teststep: And submit submit.google.search with arguments: [submit.google.search]
+19:47:51 Completed Teststep: And submit submit.google.search with arguments: [submit.google.search]
+19:47:51 Invoking Teststep: And submit submit.google.search[0sec] with arguments: [submit.google.search]
+19:47:51 Completed Teststep: And submit submit.google.search[0sec] with arguments: [submit.google.search]
+19:47:51 Invoking Teststep: Then assert partialLink=Infostretch is present with arguments: [partialLink=Infostretch]
+19:47:51 Invoking Teststep: Then assert partialLink=Infostretch is present with arguments: [partialLink=Infostretch]
+19:47:51 Completed Teststep: Then assert partialLink=Infostretch is present with arguments: [partialLink=Infostretch]
+19:47:53 Completed Teststep: Then assert partialLink=Infostretch is present with arguments: [partialLink=Infostretch]
+19:47:53 Invoking Teststep: Then assert partialLink=Infostretch is present[2sec] with arguments: [partialLink=Infostretch]
+19:47:53 Completed Teststep: Then assert partialLink=Infostretch is present[2sec] with arguments: [partialLink=Infostretch]
+19:47:53 Competed scenario: WebDriver Listener Scenario with status SUCESS

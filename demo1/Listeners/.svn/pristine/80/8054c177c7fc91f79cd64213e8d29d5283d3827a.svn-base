@@ -1,0 +1,238 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "get",
+      "args": [
+        "[http://www.google.com]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "maximizeWindow",
+          "args": [
+            "{windowHandle=current}"
+          ],
+          "result": "",
+          "subLogs": []
+        },
+        {
+          "commandName": "deleteAllCookies",
+          "args": [
+            "{}"
+          ],
+          "result": "",
+          "subLogs": []
+        },
+        {
+          "commandName": "get",
+          "args": [
+            "{url=http://www.google.com}"
+          ],
+          "result": "",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "sendKeys",
+      "args": [
+        "[Qmetry Automation Studio, text.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "id: {78fbc122-116a-40ff-8ab2-9d35db322003}",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "id: {78fbc122-116a-40ff-8ab2-9d35db322003}",
+          "subLogs": []
+        },
+        {
+          "commandName": "clearElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{78fbc122-116a-40ff-8ab2-9d35db322003}\"}"
+          ],
+          "result": "clearElement:",
+          "subLogs": []
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{78fbc122-116a-40ff-8ab2-9d35db322003}\",\"value\":[\"Qmetry Automation Studio\"]}"
+          ],
+          "result": "sendKeysToElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "sendKeys",
+      "args": [
+        "[Infostretch, text.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "id: {78fbc122-116a-40ff-8ab2-9d35db322003}",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "id: {78fbc122-116a-40ff-8ab2-9d35db322003}",
+          "subLogs": []
+        },
+        {
+          "commandName": "clearElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{78fbc122-116a-40ff-8ab2-9d35db322003}\"}"
+          ],
+          "result": "clearElement:",
+          "subLogs": []
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{78fbc122-116a-40ff-8ab2-9d35db322003}\",\"value\":[\"Infostretch\"]}"
+          ],
+          "result": "sendKeysToElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "submit",
+      "args": [
+        "[submit.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=btnG, using=name}"
+          ],
+          "result": "id: {046f6484-17fd-4fd2-8e83-7c66ca99085e}",
+          "subLogs": []
+        },
+        {
+          "commandName": "submitElement",
+          "args": [
+            "By.name: btnG",
+            "{\"id\":\"{046f6484-17fd-4fd2-8e83-7c66ca99085e}\"}"
+          ],
+          "result": "submitElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "assertPresent",
+      "args": [
+        "[partialLink=Infostretch]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=Infostretch, using=partial link text}"
+          ],
+          "result": "[]",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=Infostretch, using=partial link text}"
+          ],
+          "result": "[id: {c4a5722a-9caf-4c09-8531-97d4051b7c95}, id: {9fbb9ad0-8a44-4e3e-929b-32ff0f23dc2d}, id: {d1e171f2-18ef-496d-8008-68ae458a55e2}, id: {0bd74cf0-840b-414c-b727-b1fb7d002639}]",
+          "subLogs": []
+        }
+      ]
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "GIVEN get http://www.google.com",
+      "type": "TestStepPass",
+      "subCheckPoints": []
+    },
+    {
+      "message": "8513",
+      "type": "Info",
+      "screenshot": "",
+      "subCheckPoints": []
+    },
+    {
+      "message": "WHEN sendKeys Qmetry Automation Studio into text.google.search",
+      "type": "TestStepPass",
+      "subCheckPoints": []
+    },
+    {
+      "message": "471",
+      "type": "Info",
+      "screenshot": "",
+      "subCheckPoints": []
+    },
+    {
+      "message": "WHEN sendKeys Infostretch into text.google.search",
+      "type": "TestStepPass",
+      "subCheckPoints": []
+    },
+    {
+      "message": "169",
+      "type": "Info",
+      "screenshot": "",
+      "subCheckPoints": []
+    },
+    {
+      "message": "And submit submit.google.search",
+      "type": "TestStepPass",
+      "subCheckPoints": []
+    },
+    {
+      "message": "75",
+      "type": "Info",
+      "screenshot": "",
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then assert partialLink=Infostretch is present",
+      "type": "TestStepPass",
+      "subCheckPoints": [
+        {
+          "message": "Expected \"By.partialLinkText: Infostretch\" should be present : Actual \"By.partialLinkText: Infostretch\" is  present",
+          "type": "Pass",
+          "screenshot": "test-results/29_Feb_2016_06_26_PM/img/_1adxzlvdtw1l45168.png",
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "2887",
+      "type": "Info",
+      "screenshot": "",
+      "subCheckPoints": []
+    }
+  ]
+}

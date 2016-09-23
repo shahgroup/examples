@@ -1,0 +1,109 @@
+/**
+ *  Below is listener example which is listen before, after and on failure of web driver command execution.
+ *  Here is also describe onInitialize and beforeInitialize method which is execute before initialize or at initialize time of web driver.
+ */
+
+package com.listenersample;
+
+import org.openqa.selenium.Capabilities;
+
+import org.openqa.selenium.remote.DriverCommand;
+import org.openqa.selenium.remote.Response;
+
+import com.qmetry.qaf.automation.ui.webdriver.CommandTracker;
+import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver;
+import com.qmetry.qaf.automation.ui.webdriver.QAFWebDriverCommandAdapter;
+
+public class WebDriverListener extends QAFWebDriverCommandAdapter {
+
+	/**
+	 * Below method will be called before web driver's command execution.
+	 * 
+	 * Here beforeCommand will delete all cookies before web driver's command will be executed.
+	 * 
+	 * @param driver
+	 * 
+	 * @param commandTracker
+	 */
+	@Override
+	public void beforeCommand(QAFExtendedWebDriver driver,
+			CommandTracker commandTracker) {
+
+		super.beforeCommand(driver, commandTracker);
+		if (commandTracker.getCommand().equalsIgnoreCase(DriverCommand.GET)) {
+			System.out.print("\nDelete Cookies :\n");
+			driver.manage().deleteAllCookies();
+		}
+	}
+
+	/**
+	 * Below method will be called after web driver's command execution.
+	 * 
+	 * This can be used as intercepter. If you want to skip execution of actual
+	 * command then set response in {@link CommandTracker#setResponce(Response)}
+	 * 
+	 * @param driver
+	 * 
+	 * @param commandTracker
+	 * 
+	 */
+	@Override
+	public void afterCommand(QAFExtendedWebDriver driver,
+			CommandTracker commandTracker) {
+		super.afterCommand(driver, commandTracker);
+		String cmd = commandTracker.getCommand();
+		// Ignore command and set new response for getCurrentWindowHandle
+		if (cmd.equalsIgnoreCase(DriverCommand.GET_CURRENT_WINDOW_HANDLE)) {
+			/*
+			 * System.out.println("Skip execution:");
+			 */commandTracker.setResponce(new Response());
+		}
+	}
+
+	/**
+	 * Below method will be called on failure of web driver's
+	 * command execution.
+	 * 
+	 * This can be used to propagate exception. You can get information about
+	 * from where exception thrown by inspecting
+	 * {@link CommandTracker#getStage()}
+	 * 
+	 * @param driver
+	 * 
+	 * @param commandTracker
+	 */
+	@Override
+	public void onFailure(QAFExtendedWebDriver driver,
+			CommandTracker commandTracker) {
+		super.onFailure(driver, commandTracker);
+		System.out.println("Failure at :" + commandTracker.getStage());
+	}
+
+	/**
+	 * Below method will be called immediately when new driver instance is
+	 * created.
+	 * 
+	 * Here you will see maximize window immediately after new driver instance is
+	 * created.
+	 * 
+	 * @param driver
+	 */
+	@Override
+	public void onInitialize(QAFExtendedWebDriver driver) {
+		driver.manage().window().maximize();
+
+	}
+
+	/**
+	 * You can specify additional desired capabilities for the driver before
+	 * initialization.
+	 * 
+	 * @param desiredCapabilities
+	 */
+	@Override
+	public void beforeInitialize(Capabilities desiredCapabilities) {
+		System.out.println("\nGet Browser name using desiredcapabilies = "
+				+ desiredCapabilities.getBrowserName());
+
+	}
+}

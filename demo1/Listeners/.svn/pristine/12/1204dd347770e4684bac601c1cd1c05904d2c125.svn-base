@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ListenerSample.scenarios.suite1.bdd]">
+  <parameter name="scenario.file.loc" value="scenarios/suite1.bdd"/>
+  <test name="BDD Test(failed)">
+    <classes>
+      <class name="com.infostretch.automation.step.client.Scenario">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="scenario"/>
+          <include name="setupSuit"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="afterSuit"/>
+          <include name="setupMethod"/>
+        </methods>
+      </class> <!-- com.infostretch.automation.step.client.Scenario -->
+    </classes>
+  </test> <!-- BDD Test(failed) -->
+</suite> <!-- Failed suite [ListenerSample.scenarios.suite1.bdd] -->

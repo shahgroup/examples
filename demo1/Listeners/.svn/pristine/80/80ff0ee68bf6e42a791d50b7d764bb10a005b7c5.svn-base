@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package com.testSuite;
+
+import com.qmetry.qaf.automation.core.MessageTypes;
+import com.qmetry.qaf.automation.step.CommonStep;
+import com.qmetry.qaf.automation.step.QAFTestStep;
+import com.qmetry.qaf.automation.util.Reporter;
+
+/**
+ * @author mishal.shah
+ *
+ */
+public class StepsBackLog {
+
+	private long stTime;
+
+	@QAFTestStep(description = "user should find result with {searchTerm}")
+	public void userShouldFindResultWith(String str1) {
+		long stTime = System.currentTimeMillis();
+		CommonStep.sendKeys(str1, "text.google.search");
+		CommonStep.click("submit.google.search");
+		long dur = System.currentTimeMillis() - stTime;
+		Reporter.log("This took " + dur, MessageTypes.Info);
+	}
+
+	@QAFTestStep(description = "user search for {0}")
+	public void userSearchFor(String str1) {
+		// TODO: call test steps
+	}
+
+	@QAFTestStep(description = "Strat time tracking")
+	public void stratTimeTracking() {
+		  stTime = System.currentTimeMillis();
+		
+	}
+
+	@QAFTestStep(description = "Stop Time Tracking")
+	public void stopTimeTracking() {
+		long dur = System.currentTimeMillis() - stTime;
+
+		Reporter.log("This took " + dur, MessageTypes.Info);
+
+	}
+
+}

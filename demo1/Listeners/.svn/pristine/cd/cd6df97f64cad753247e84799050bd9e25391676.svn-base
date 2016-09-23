@@ -1,0 +1,229 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "get",
+      "args": [
+        "[http://www.google.com]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "maximizeWindow",
+          "args": [
+            "{windowHandle=current}"
+          ],
+          "result": "0:",
+          "subLogs": []
+        },
+        {
+          "commandName": "getCurrentWindowHandle",
+          "args": [
+            "{}"
+          ],
+          "result": "0:{b880c561-7430-459e-bf05-4652ff7a3891}",
+          "subLogs": []
+        },
+        {
+          "commandName": "setTimeout",
+          "args": [
+            "30000"
+          ],
+          "subLogs": []
+        },
+        {
+          "commandName": "deleteAllCookies",
+          "args": [
+            "{}"
+          ],
+          "result": "0:",
+          "subLogs": []
+        },
+        {
+          "commandName": "get",
+          "args": [
+            "{url=http://www.google.com}"
+          ],
+          "result": "0:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "sendKeys",
+      "args": [
+        "[Qmetry Automation Studio, text.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=name, value=q}"
+          ],
+          "result": "0:id: {800f1b7a-9e5e-4760-b084-d7129980e1bc}",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=name, value=q}"
+          ],
+          "result": "0:id: {800f1b7a-9e5e-4760-b084-d7129980e1bc}",
+          "subLogs": []
+        },
+        {
+          "commandName": "clearElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{800f1b7a-9e5e-4760-b084-d7129980e1bc}\"}"
+          ],
+          "result": "clearElement:",
+          "subLogs": []
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{800f1b7a-9e5e-4760-b084-d7129980e1bc}\",\"value\":[\"Qmetry Automation Studio\"]}"
+          ],
+          "result": "sendKeysToElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "sendKeys",
+      "args": [
+        "[Infostretch, text.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=name, value=q}"
+          ],
+          "result": "0:id: {800f1b7a-9e5e-4760-b084-d7129980e1bc}",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=name, value=q}"
+          ],
+          "result": "0:id: {800f1b7a-9e5e-4760-b084-d7129980e1bc}",
+          "subLogs": []
+        },
+        {
+          "commandName": "clearElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{800f1b7a-9e5e-4760-b084-d7129980e1bc}\"}"
+          ],
+          "result": "clearElement:",
+          "subLogs": []
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{800f1b7a-9e5e-4760-b084-d7129980e1bc}\",\"value\":[\"Infostretch\"]}"
+          ],
+          "result": "sendKeysToElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "submit",
+      "args": [
+        "[submit.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=name, value=btnG}"
+          ],
+          "result": "0:id: {64f0b17a-b601-4710-91d1-b8c84f55f711}",
+          "subLogs": []
+        },
+        {
+          "commandName": "submitElement",
+          "args": [
+            "By.name: btnG",
+            "{\"id\":\"{64f0b17a-b601-4710-91d1-b8c84f55f711}\"}"
+          ],
+          "result": "submitElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "assertPresent",
+      "args": [
+        "[partialLink=Infostretch]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=partial link text, value=Infostretch}"
+          ],
+          "result": "Unable to locate element: {\"method\":\"partial link text\",\"selector\":\"Infostretch\"}\nCommand duration or timeout: 61 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '2.39.0', revision: 'ff23eac', time: '2013-12-16 16:11:15'\nSystem info: host: 'ISPL_649', ip: '10.12.41.149', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.6.0_45'\nSession ID: cefab52b-9436-4696-b21a-0584bf292105\nDriver info: com.infostretch.automation.ui.webdriver.QAFExtendedWebDriver\nCapabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=28.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=partial link text, value=Infostretch}"
+          ],
+          "result": "0:id: {f18309c5-8cb1-4f94-b03c-ae4a08758b9b}",
+          "subLogs": []
+        }
+      ]
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Browser: ",
+      "type": "Info",
+      "screenshot": "",
+      "subCheckPoints": []
+    },
+    {
+      "message": "GIVEN get http://www.google.com",
+      "type": "TestStepPass",
+      "subCheckPoints": []
+    },
+    {
+      "message": "WHEN sendKeys Qmetry Automation Studio into text.google.search",
+      "type": "TestStepPass",
+      "subCheckPoints": []
+    },
+    {
+      "message": "WHEN sendKeys Infostretch into text.google.search",
+      "type": "TestStepPass",
+      "subCheckPoints": []
+    },
+    {
+      "message": "And submit submit.google.search",
+      "type": "TestStepPass",
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then assert partialLink=Infostretch is present",
+      "type": "TestStepPass",
+      "subCheckPoints": [
+        {
+          "message": "Expected \"By.partialLinkText: Infostretch\" should be present : Actual \"By.partialLinkText: Infostretch\" is  present",
+          "type": "Pass",
+          "screenshot": "img/scenario_d55xgiyl01x327951.png",
+          "subCheckPoints": []
+        }
+      ]
+    }
+  ]
+}

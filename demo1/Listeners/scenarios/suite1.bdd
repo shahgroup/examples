@@ -1,0 +1,17 @@
+Narrative: Given test is example of uses of listener. 
+provided a normal test case, it use test-step listener, WebDriver listener,WebElement listener.
+
+# Normal test scenario 
+
+SCENARIO: WebDriver Listener Scenario
+META-DATA: {"description":"Listener Description"}
+	
+	#TODO: call test steps
+	
+#	Given user on login page
+#	then Login should take max of 5 sec 
+
+	When user search for 'InfoStretch'
+	Then user should find result with 'InfoStretch'
+	Stop Time Tracking
+END

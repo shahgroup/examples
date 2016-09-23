@@ -1,0 +1,214 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "get",
+      "args": [
+        "[http://www.google.com]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "maximizeWindow",
+          "args": [
+            "{windowHandle=current}"
+          ],
+          "result": "",
+          "subLogs": []
+        },
+        {
+          "commandName": "deleteAllCookies",
+          "args": [
+            "{}"
+          ],
+          "result": "",
+          "subLogs": []
+        },
+        {
+          "commandName": "get",
+          "args": [
+            "{url=http://www.google.com}"
+          ],
+          "result": "",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "sendKeys",
+      "args": [
+        "[Qmetry Automation Studio, text.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=name, value=q}"
+          ],
+          "result": "id: {46cf15df-07ca-4f6a-b96c-3122e3bcf0de}",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=name, value=q}"
+          ],
+          "result": "id: {46cf15df-07ca-4f6a-b96c-3122e3bcf0de}",
+          "subLogs": []
+        },
+        {
+          "commandName": "clearElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{46cf15df-07ca-4f6a-b96c-3122e3bcf0de}\"}"
+          ],
+          "result": "clearElement:",
+          "subLogs": []
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{46cf15df-07ca-4f6a-b96c-3122e3bcf0de}\",\"value\":[\"Qmetry Automation Studio\"]}"
+          ],
+          "result": "sendKeysToElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "sendKeys",
+      "args": [
+        "[Infostretch, text.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=name, value=q}"
+          ],
+          "result": "id: {46cf15df-07ca-4f6a-b96c-3122e3bcf0de}",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=name, value=q}"
+          ],
+          "result": "id: {46cf15df-07ca-4f6a-b96c-3122e3bcf0de}",
+          "subLogs": []
+        },
+        {
+          "commandName": "clearElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{46cf15df-07ca-4f6a-b96c-3122e3bcf0de}\"}"
+          ],
+          "result": "clearElement:",
+          "subLogs": []
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{46cf15df-07ca-4f6a-b96c-3122e3bcf0de}\",\"value\":[\"Infostretch\"]}"
+          ],
+          "result": "sendKeysToElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "submit",
+      "args": [
+        "[submit.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{using=name, value=btnG}"
+          ],
+          "result": "id: {3f1af64e-71e0-4dc1-9063-345bfccf956b}",
+          "subLogs": []
+        },
+        {
+          "commandName": "submitElement",
+          "args": [
+            "By.name: btnG",
+            "{\"id\":\"{3f1af64e-71e0-4dc1-9063-345bfccf956b}\"}"
+          ],
+          "result": "submitElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "assertPresent",
+      "args": [
+        "[partialLink=Infostretch]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{using=partial link text, value=Infostretch}"
+          ],
+          "result": "[]",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{using=partial link text, value=Infostretch}"
+          ],
+          "result": "[id: {5c67ab61-8017-4036-b392-f69717c1249f}, id: {565db8fa-5173-4a50-85e0-62922a18e145}, id: {73a9f87d-bfe8-4813-aa13-895537b998f6}, id: {d45bc62c-e14b-4528-85c1-4d729d7aabb2}]",
+          "subLogs": []
+        }
+      ]
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "GIVEN get 'http://www.google.com'[13sec]",
+      "type": "TestStepPass",
+      "duration": 13051,
+      "subCheckPoints": []
+    },
+    {
+      "message": "WHEN sendKeys 'Qmetry Automation Studio' into 'text.google.search'[0sec]",
+      "type": "TestStepPass",
+      "duration": 464,
+      "subCheckPoints": []
+    },
+    {
+      "message": "WHEN sendKeys 'Infostretch' into 'text.google.search'[0sec]",
+      "type": "TestStepPass",
+      "duration": 172,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And submit 'submit.google.search'[0sec]",
+      "type": "TestStepPass",
+      "duration": 100,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then assert 'partialLink=Infostretch' is present[2sec]",
+      "type": "TestStepPass",
+      "duration": 2796,
+      "subCheckPoints": [
+        {
+          "message": "Expected \"By.partialLinkText: Infostretch\" should be present : Actual \"By.partialLinkText: Infostretch\" is  present",
+          "type": "Pass",
+          "screenshot": "test-results/02_Mar_2016_02_34_PM/img/_1mn0pvu37q14k58121.png",
+          "duration": 0,
+          "subCheckPoints": []
+        }
+      ]
+    }
+  ]
+}

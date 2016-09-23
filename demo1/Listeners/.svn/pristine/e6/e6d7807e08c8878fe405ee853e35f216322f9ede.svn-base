@@ -1,0 +1,58 @@
+{
+  "total": 1,
+  "pass": 1,
+  "fail": 0,
+  "skip": 0,
+  "classes": [
+    "com.infostretch.automation.step.client.Scenario"
+  ],
+  "envInfo": {
+    "execution-env-info": {
+      "os.version": "6.1",
+      "host": "ICPL10495",
+      "user.name": "mishal.shah",
+      "os.arch": "amd64",
+      "java.arch": "64",
+      "java.version": "1.7.0_75",
+      "java.vendor": "Oracle Corporation",
+      "os.name": "Windows 7"
+    },
+    "isfw-build-info": {
+      "QAF-Version": "2.1",
+      "QAF-Revision": "6RC1",
+      "QAF-Build-Time": "01-Mar-2016 17:40:02",
+      "QAF-Type": "Pro"
+    },
+    "browser-desired-capabilities": {
+      "platform": "ANY",
+      "cssSelectorsEnabled": true,
+      "javascriptEnabled": true,
+      "browserName": "firefox",
+      "takesScreenshot": true,
+      "version": ""
+    },
+    "run-parameters": {
+      "scenario.file.loc": "scenarios/suite1.bdd",
+      "resources": "resources",
+      "baseurl": "http://www.google.com"
+    },
+    "browser-actual-capabilities": {
+      "platform": "WINDOWS",
+      "acceptSslCerts": "true",
+      "javascriptEnabled": "true",
+      "cssSelectorsEnabled": "true",
+      "databaseEnabled": "true",
+      "browserName": "firefox",
+      "handlesAlerts": "true",
+      "nativeEvents": "false",
+      "webStorageEnabled": "true",
+      "rotatable": "false",
+      "locationContextEnabled": "true",
+      "applicationCacheEnabled": "true",
+      "takesScreenshot": "true",
+      "version": "43.0.1"
+    }
+  },
+  "startTime": 1456909508100,
+  "endTime": 1456909508137
+}

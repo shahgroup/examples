@@ -1,0 +1,98 @@
+[main] 09:25:55,352 DEBUG [com.infostretch.automation.testng.pro.QAFAnnotationTransformer2] QAFTestNGListener registered!...
+[main] 09:25:55,423 INFO  [com.infostretch.automation.core.ConfigurationManager] ISFW build info: {QAF-Version=2.1, QAF-Revision=6RC1, QAF-Build-Time=29-Feb-2016 15:15:08, QAF-Type=Pro}
+[main] 09:25:55,433 INFO  [com.infostretch.automation.core.ConfigurationManager] Resource dir: D:\Projects\QAS\samples\final\training\ListenerSample\resources. Found property files to load: 2
+[main] 09:25:55,453 INFO  [com.infostretch.automation.core.ConfigurationManager] Resource dir: D:\Projects\QAS\samples\final\training\ListenerSample\resources. Found property files to load: 0
+[main] 09:25:55,463 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] QAFTestNGListener registered!...
+[main] 09:25:55,463 DEBUG [com.infostretch.automation.testng.pro.QAFMethodInterceptor] QAFTestNGListener registered!...
+[main] 09:25:55,463 DEBUG [com.infostretch.automation.testng.pro.QAFResultListener] QAFTestNGListener registered!...
+[main] 09:25:55,463 DEBUG [com.infostretch.automation.testng.pro.QAFSuiteListener] QAFTestNGListener registered!...
+[main] 09:26:08,773 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: setupSuit
+[main] 09:26:08,783 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: setupSuit - com.infostretch.automation.ui is test:false
+[main] 09:26:08,783 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 09:26:08,783 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: setupSuit
+[main] 09:26:08,783 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: setupSuit - com.infostretch.automation.ui is test:false
+[main] 09:26:08,783 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 09:26:08,793 DEBUG [com.infostretch.automation.testng.pro.QAFMethodInterceptor] Method Order interceptor called
+[main] 09:26:08,803 DEBUG [com.infostretch.automation.testng.pro.QAFMethodInterceptor] Method Order interceptor called
+[main] 09:26:08,803 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: setup
+[main] 09:26:08,803 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: setup - com.infostretch.automation.ui is test:false
+[main] 09:26:08,803 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 09:26:08,803 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: setupMethod
+[main] 09:26:08,803 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: setupMethod - com.infostretch.automation.ui is test:false
+[main] 09:26:08,803 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 09:26:08,813 DEBUG [com.infostretch.automation.testng.pro.QAFResultListener] onTestStart: start
+[main] 09:26:08,813 DEBUG [com.infostretch.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: scenario
+[main] 09:26:09,083 INFO  [com.infostretch.automation.core.QAFTestBase] Initializing Driver...browser_str:firefoxDriver,base_url:http://www.google.com,sel_server:localhost,port:4444
+[main] 09:26:09,093 INFO  [com.infostretch.automation.ui.UiDriverFactory] browser: firefoxDriver
+[Forwarding newSession on session null to remote] 09:26:12,961 DEBUG [org.apache.http.client.protocol.RequestAddCookies] CookieSpec selected: default
+[Forwarding newSession on session null to remote] 09:26:12,987 DEBUG [org.apache.http.client.protocol.RequestAuthCache] Auth cache not set in the context
+[Forwarding newSession on session null to remote] 09:26:12,990 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[Forwarding newSession on session null to remote] 09:26:13,024 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection leased: [id: 0][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[Forwarding newSession on session null to remote] 09:26:13,027 DEBUG [org.apache.http.impl.execchain.MainClientExec] Opening connection {}->http://127.0.0.1:7055
+[Forwarding newSession on session null to remote] 09:26:13,031 DEBUG [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connecting to /127.0.0.1:7055
+[Forwarding newSession on session null to remote] 09:26:13,045 DEBUG [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connection established 127.0.0.1:3619<->127.0.0.1:7055
+[Forwarding newSession on session null to remote] 09:26:13,047 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-0: set socket timeout to 10800000
+[Forwarding newSession on session null to remote] 09:26:13,047 DEBUG [org.apache.http.impl.execchain.MainClientExec] Executing request POST /hub/session HTTP/1.1
+[Forwarding newSession on session null to remote] 09:26:13,048 DEBUG [org.apache.http.impl.execchain.MainClientExec] Target auth state: UNCHALLENGED
+[Forwarding newSession on session null to remote] 09:26:13,050 DEBUG [org.apache.http.impl.execchain.MainClientExec] Proxy auth state: UNCHALLENGED
+[Forwarding newSession on session null to remote] 09:26:13,053 DEBUG [org.apache.http.headers] http-outgoing-0 >> POST /hub/session HTTP/1.1
+[Forwarding newSession on session null to remote] 09:26:13,053 DEBUG [org.apache.http.headers] http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+[Forwarding newSession on session null to remote] 09:26:13,053 DEBUG [org.apache.http.headers] http-outgoing-0 >> Content-Length: 180
+[Forwarding newSession on session null to remote] 09:26:13,053 DEBUG [org.apache.http.headers] http-outgoing-0 >> Host: 127.0.0.1:7055
+[Forwarding newSession on session null to remote] 09:26:13,053 DEBUG [org.apache.http.headers] http-outgoing-0 >> Connection: Keep-Alive
+[Forwarding newSession on session null to remote] 09:26:13,053 DEBUG [org.apache.http.headers] http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.7.0_75)
+[Forwarding newSession on session null to remote] 09:26:13,053 DEBUG [org.apache.http.headers] http-outgoing-0 >> Accept-Encoding: gzip,deflate
+[Forwarding newSession on session null to remote] 09:26:13,054 DEBUG [org.apache.http.wire] http-outgoing-0 >> "POST /hub/session HTTP/1.1[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,054 DEBUG [org.apache.http.wire] http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,054 DEBUG [org.apache.http.wire] http-outgoing-0 >> "Content-Length: 180[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,054 DEBUG [org.apache.http.wire] http-outgoing-0 >> "Host: 127.0.0.1:7055[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,054 DEBUG [org.apache.http.wire] http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,054 DEBUG [org.apache.http.wire] http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.7.0_75)[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,054 DEBUG [org.apache.http.wire] http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,054 DEBUG [org.apache.http.wire] http-outgoing-0 >> "[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,054 DEBUG [org.apache.http.wire] http-outgoing-0 >> "{"desiredCapabilities":{"platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"browserName":"firefox","takesScreenshot":true,"version":""},"requiredCapabilities":{}}"
+[Forwarding newSession on session null to remote] 09:26:13,547 DEBUG [org.apache.http.wire] http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,548 DEBUG [org.apache.http.wire] http-outgoing-0 << "content-type: application/json; charset=UTF-8[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,548 DEBUG [org.apache.http.wire] http-outgoing-0 << "connection: close[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,548 DEBUG [org.apache.http.wire] http-outgoing-0 << "content-length: 423[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,548 DEBUG [org.apache.http.wire] http-outgoing-0 << "server: httpd.js[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,548 DEBUG [org.apache.http.wire] http-outgoing-0 << "date: Wed, 02 Mar 2016 03:56:13 GMT[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,548 DEBUG [org.apache.http.wire] http-outgoing-0 << "[\r][\n]"
+[Forwarding newSession on session null to remote] 09:26:13,553 DEBUG [org.apache.http.headers] http-outgoing-0 << HTTP/1.1 200 OK
+[Forwarding newSession on session null to remote] 09:26:13,553 DEBUG [org.apache.http.headers] http-outgoing-0 << content-type: application/json; charset=UTF-8
+[Forwarding newSession on session null to remote] 09:26:13,553 DEBUG [org.apache.http.headers] http-outgoing-0 << connection: close
+[Forwarding newSession on session null to remote] 09:26:13,553 DEBUG [org.apache.http.headers] http-outgoing-0 << content-length: 423
+[Forwarding newSession on session null to remote] 09:26:13,553 DEBUG [org.apache.http.headers] http-outgoing-0 << server: httpd.js
+[Forwarding newSession on session null to remote] 09:26:13,553 DEBUG [org.apache.http.headers] http-outgoing-0 << date: Wed, 02 Mar 2016 03:56:13 GMT
+[Forwarding newSession on session null to remote] 09:26:13,568 DEBUG [org.apache.http.wire] http-outgoing-0 << "{"name":"newSession","sessionId":"1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8","status":0,"value":{"cssSelectorsEnabled":true,"browserName":"firefox","handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":false,"platform":"WINDOWS","rotatable":false,"takesScreenshot":true,"version":"43.0.1","webStorageEnabled":true,"applicationCacheEnabled":true,"databaseEnabled":true,"locationContextEnabled":true,"acceptSslCerts":true}}"
+[Forwarding newSession on session null to remote] 09:26:13,568 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-0: Close connection
+[Forwarding newSession on session null to remote] 09:26:13,568 DEBUG [org.apache.http.impl.execchain.MainClientExec] Connection discarded
+[Forwarding newSession on session null to remote] 09:26:13,568 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection released: [id: 0][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[main] 09:26:13,608 INFO  [com.infostretch.automation.ui.WebDriverCommandLogger] Executing maximizeWindow parameters: {"windowHandle":"current"}
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,610 DEBUG [org.apache.http.client.protocol.RequestAddCookies] CookieSpec selected: default
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,611 DEBUG [org.apache.http.client.protocol.RequestAuthCache] Auth cache not set in the context
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,611 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,611 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection leased: [id: 1][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,611 DEBUG [org.apache.http.impl.execchain.MainClientExec] Opening connection {}->http://127.0.0.1:7055
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,611 DEBUG [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connecting to /127.0.0.1:7055
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,612 DEBUG [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connection established 127.0.0.1:3620<->127.0.0.1:7055
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,612 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-1: set socket timeout to 10800000
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,612 DEBUG [org.apache.http.impl.execchain.MainClientExec] Executing request POST /hub/session/1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8/window/current/maximize HTTP/1.1
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,612 DEBUG [org.apache.http.impl.execchain.MainClientExec] Target auth state: UNCHALLENGED
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,612 DEBUG [org.apache.http.impl.execchain.MainClientExec] Proxy auth state: UNCHALLENGED
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,612 DEBUG [org.apache.http.headers] http-outgoing-1 >> POST /hub/session/1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8/window/current/maximize HTTP/1.1
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,612 DEBUG [org.apache.http.headers] http-outgoing-1 >> Content-Type: application/json; charset=utf-8
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,612 DEBUG [org.apache.http.headers] http-outgoing-1 >> Content-Length: 26
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.headers] http-outgoing-1 >> Host: 127.0.0.1:7055
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.headers] http-outgoing-1 >> Connection: Keep-Alive
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.headers] http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.7.0_75)
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.headers] http-outgoing-1 >> Accept-Encoding: gzip,deflate
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.wire] http-outgoing-1 >> "POST /hub/session/1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8/window/current/maximize HTTP/1.1[\r][\n]"
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.wire] http-outgoing-1 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.wire] http-outgoing-1 >> "Content-Length: 26[\r][\n]"
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.wire] http-outgoing-1 >> "Host: 127.0.0.1:7055[\r][\n]"
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.wire] http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.wire] http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.7.0_75)[\r][\n]"
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,613 DEBUG [org.apache.http.wire] http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,614 DEBUG [org.apache.http.wire] http-outgoing-1 >> "[\r][\n]"
+[Forwarding maximizeWindow on session 1f9dbe77-a4f8-4a62-b930-a8d5d987d1b8 to remote] 09:26:13,614 DEBUG [org.apache.http.wire] http-outgoing-1 >> "{"windowHandle":"current"}"

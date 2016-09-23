@@ -1,0 +1,21 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "name": "WebDriver Listener Scenario",
+        "groups": [
+          "scenario"
+        ],
+        "description": "Listener Description"
+      },
+      "dependsOn": [],
+      "startTime": 1456755032258,
+      "duration": 29775,
+      "result": "fail",
+      "passPer": 0.0
+    }
+  ]
+}

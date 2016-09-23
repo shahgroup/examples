@@ -1,0 +1,277 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "get",
+      "args": [
+        "[http://www.google.com]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "[http://www.google.com]"
+          ],
+          "result": "success",
+          "subLogs": []
+        },
+        {
+          "commandName": "maximizeWindow",
+          "args": [
+            "{windowHandle=current}"
+          ],
+          "result": "",
+          "subLogs": []
+        },
+        {
+          "commandName": "deleteAllCookies",
+          "args": [
+            "{}"
+          ],
+          "result": "",
+          "subLogs": []
+        },
+        {
+          "commandName": "get",
+          "args": [
+            "{url=http://www.google.com}"
+          ],
+          "result": "",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "sendKeys",
+      "args": [
+        "[Qmetry Automation Studio, text.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "sendKeys",
+          "args": [
+            "[Qmetry Automation Studio, text.google.search]"
+          ],
+          "result": "success",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "id: {ecd023ba-08df-43a1-b875-c8937d789981}",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "id: {ecd023ba-08df-43a1-b875-c8937d789981}",
+          "subLogs": []
+        },
+        {
+          "commandName": "clearElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{ecd023ba-08df-43a1-b875-c8937d789981}\"}"
+          ],
+          "result": "clearElement:",
+          "subLogs": []
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{ecd023ba-08df-43a1-b875-c8937d789981}\",\"value\":[\"Qmetry Automation Studio\"]}"
+          ],
+          "result": "sendKeysToElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "sendKeys",
+      "args": [
+        "[Infostretch, text.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "sendKeys",
+          "args": [
+            "[Infostretch, text.google.search]"
+          ],
+          "result": "success",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "id: {ecd023ba-08df-43a1-b875-c8937d789981}",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "id: {ecd023ba-08df-43a1-b875-c8937d789981}",
+          "subLogs": []
+        },
+        {
+          "commandName": "clearElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{ecd023ba-08df-43a1-b875-c8937d789981}\"}"
+          ],
+          "result": "clearElement:",
+          "subLogs": []
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.name: q",
+            "{\"id\":\"{ecd023ba-08df-43a1-b875-c8937d789981}\",\"value\":[\"Infostretch\"]}"
+          ],
+          "result": "sendKeysToElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "submit",
+      "args": [
+        "[submit.google.search]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "submit",
+          "args": [
+            "[submit.google.search]"
+          ],
+          "result": "success",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=btnG, using=name}"
+          ],
+          "result": "id: {5826afec-9ac7-4821-9f26-017591154bfb}",
+          "subLogs": []
+        },
+        {
+          "commandName": "submitElement",
+          "args": [
+            "By.name: btnG",
+            "{\"id\":\"{5826afec-9ac7-4821-9f26-017591154bfb}\"}"
+          ],
+          "result": "submitElement:",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "assertPresent",
+      "args": [
+        "[partialLink=Infostretch]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "assertPresent",
+          "args": [
+            "[partialLink=Infostretch]"
+          ],
+          "result": "success",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=Infostretch, using=partial link text}"
+          ],
+          "result": "[]",
+          "subLogs": []
+        },
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=Infostretch, using=partial link text}"
+          ],
+          "result": "[id: {6736beee-4f31-4508-acdd-34a96c38463e}, id: {d99d8259-e5af-49f8-af08-c9cd80046321}, id: {27f5a8ee-f1b2-4eaf-9272-5c814d28ce92}, id: {8c8d7d43-fbeb-4ef6-898c-d6fffcc9a7b3}]",
+          "subLogs": []
+        }
+      ]
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "GIVEN get http://www.google.com",
+      "type": "TestStepPass",
+      "subCheckPoints": [
+        {
+          "message": "GIVEN get http://www.google.com",
+          "type": "TestStepPass",
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "WHEN sendKeys Qmetry Automation Studio into text.google.search",
+      "type": "TestStepPass",
+      "subCheckPoints": [
+        {
+          "message": "WHEN sendKeys Qmetry Automation Studio into text.google.search",
+          "type": "TestStepPass",
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "WHEN sendKeys Infostretch into text.google.search",
+      "type": "TestStepPass",
+      "subCheckPoints": [
+        {
+          "message": "WHEN sendKeys Infostretch into text.google.search",
+          "type": "TestStepPass",
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "And submit submit.google.search",
+      "type": "TestStepPass",
+      "subCheckPoints": [
+        {
+          "message": "And submit submit.google.search",
+          "type": "TestStepPass",
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "Then assert partialLink=Infostretch is present",
+      "type": "TestStepPass",
+      "subCheckPoints": [
+        {
+          "message": "Then assert partialLink=Infostretch is present",
+          "type": "TestStepPass",
+          "subCheckPoints": []
+        },
+        {
+          "message": "Expected \"By.partialLinkText: Infostretch\" should be present : Actual \"By.partialLinkText: Infostretch\" is  present",
+          "type": "Pass",
+          "screenshot": "test-results/29_Feb_2016_07_46_PM/img/_1fo6yljmvphfw45186.png",
+          "subCheckPoints": []
+        }
+      ]
+    }
+  ]
+}

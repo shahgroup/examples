@@ -1,0 +1,2 @@
+submit.google.search = {\"locator\":\"name=btnG\",\"desc\":\"Google Search submit\"}
+text.google.search = {\"locator\":\"name=q\",\"desc\":\"Input for Google Search\"}

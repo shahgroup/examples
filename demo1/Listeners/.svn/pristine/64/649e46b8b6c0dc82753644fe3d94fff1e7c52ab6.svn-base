@@ -1,0 +1,42 @@
+package com.testSuite;
+
+import static com.qmetry.qaf.automation.step.CommonStep.assertLinkWithPartialTextPresent;
+import static com.qmetry.qaf.automation.step.CommonStep.click;
+import static com.qmetry.qaf.automation.step.CommonStep.sendKeys;
+import static com.qmetry.qaf.automation.step.CommonStep.get;
+
+import javax.ws.rs.GET;
+
+import org.testng.annotations.Test;
+
+import com.qmetry.qaf.automation.ui.WebDriverTestCase;
+
+public class suite1 extends WebDriverTestCase {
+
+	/** This example demonstrate WebListener/WebElement/Step listener
+	 * 
+	 * on Execution of {@link GET} command WebListerner will execute.
+	 * on Execution of {@link SendKeys} command WebElement will execute and search for text using
+	 * text.google.search
+	 * After search ,element will be clean and execute other {@link SendKeys} using "Infostretch"
+	 * keyword
+	 * Here while executing each and every step Step Listener will be called
+	 * 
+	 *  To register one or more listener you need to set appropriate property into
+	 *  application.properties file.
+ 		wd.command.listeners= com.listenersample.WebDriverListener
+ 		we.command.listeners=com.listenersample.WebElementListener
+ 		teststep.listeners=com.listenersample.TestStepTrackListener
+	 * 
+	 * 
+	 */
+	@Test(groups = { "SMOKE" }, description = "Listener Scenario")
+	public void Listener_Scenario() {
+		get("/");
+		sendKeys("QMetry Automation Studio", "text.google.search");
+		click("submit.google.search");
+		sendKeys("Infostretch", "text.google.search");
+		click("submit.google.search");
+		assertLinkWithPartialTextPresent("InfoStretch");
+	}
+}

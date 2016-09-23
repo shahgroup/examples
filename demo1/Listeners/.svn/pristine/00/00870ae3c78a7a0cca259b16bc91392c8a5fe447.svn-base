@@ -1,0 +1,7 @@
+SCENARIO|WebDriver Listener Scenario|{"description":"Listener Description"}
+get|["http://www.google.com"]|
+sendKeys|["Qmetry Automation Studio","text.google.search"]|
+sendKeys|["Infostretch","text.google.search"]|
+submit|["name=btnG"]|
+verifyPresent|["partialLink=Infostretch"]|
+END||

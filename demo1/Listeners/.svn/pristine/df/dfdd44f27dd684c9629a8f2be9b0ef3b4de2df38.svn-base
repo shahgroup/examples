@@ -1,0 +1,9 @@
+09:39:40 scenario.file.loc[Ljava.lang.String;@1221351e
+09:39:40 loading text file: D:\Projects\QAS\samples\final\training\ListenerSample\scenarios\suite1.bdd
+09:39:40 total test found: 1
+09:39:43 
+
+Executing scenario: WebDriver Listener Scenario - Listener Description
+09:39:43 Invoking Teststep: GIVEN get 'http://www.google.com' with arguments: [http://www.google.com]
+09:39:56 Completed Teststep: GIVEN get 'http://www.google.com'[13sec] with arguments: [http://www.google.com]
+09:39:56 Competed scenario: WebDriver Listener Scenario with status SUCESS

@@ -1,0 +1,103 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "get",
+      "args": [
+        "[http://www.google.com]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "maximizeWindow",
+          "args": [
+            "{windowHandle=current}"
+          ],
+          "result": "",
+          "subLogs": []
+        },
+        {
+          "commandName": "deleteAllCookies",
+          "args": [
+            "{}"
+          ],
+          "result": "",
+          "subLogs": []
+        },
+        {
+          "commandName": "get",
+          "args": [
+            "{url=http://www.google.com}"
+          ],
+          "result": "",
+          "subLogs": []
+        }
+      ]
+    },
+    {
+      "commandName": "WHEN sendKeys 'Qmetry Automation Studio' into 'text.google.search'",
+      "args": [
+        "[Qmetry Automation Studio, text.google.search]"
+      ],
+      "result": "Not Run",
+      "subLogs": []
+    },
+    {
+      "commandName": "WHEN sendKeys 'Infostretch' into 'text.google.search'",
+      "args": [
+        "[Infostretch, text.google.search]"
+      ],
+      "result": "Not Run",
+      "subLogs": []
+    },
+    {
+      "commandName": "And submit 'submit.google.search'",
+      "args": [
+        "[submit.google.search]"
+      ],
+      "result": "Not Run",
+      "subLogs": []
+    },
+    {
+      "commandName": "Then assert 'partialLink=Infostretch' is present",
+      "args": [
+        "[partialLink=Infostretch]"
+      ],
+      "result": "Not Run",
+      "subLogs": []
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "GIVEN get http://www.google.com",
+      "type": "TestStepPass",
+      "subCheckPoints": []
+    },
+    {
+      "message": "WHEN sendKeys Qmetry Automation Studio into text.google.search",
+      "type": "TestStep",
+      "subCheckPoints": []
+    },
+    {
+      "message": "WHEN sendKeys Infostretch into text.google.search",
+      "type": "TestStep",
+      "subCheckPoints": []
+    },
+    {
+      "message": "And submit submit.google.search",
+      "type": "TestStep",
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then assert partialLink=Infostretch is present",
+      "type": "TestStep",
+      "subCheckPoints": []
+    },
+    {
+      "message": "java.lang.NullPointerException",
+      "type": "Fail",
+      "screenshot": "test-results/29_Feb_2016_07_35_PM/img/_1ufppwpz2da8560987.png",
+      "subCheckPoints": []
+    }
+  ],
+  "errorTrace": "com.infostretch.automation.step.StepInvocationException: java.lang.NullPointerException\r\n\tat .(D:\\Projects\\QAS\\samples\\final\\training\\ListenerSample\\scenarios\\suite1.bdd:11)\r\n\tat com.infostretch.automation.step.TestStepListener.afterExecute(SourceFile:86)\r\n\tat com.listenersample.TestStepTrackListener.afterExecute(TestStepTrackListener.java:50)\r\n\tat com.infostretch.automation.step.BaseTestStep.afterExecute(SourceFile:160)\r\n\tat com.infostretch.automation.step.BaseTestStep.execute(SourceFile:138)\r\n\tat com.infostretch.automation.step.JavaStep.execute(SourceFile:95)\r\n\tat com.infostretch.automation.step.StringTestStep.execute(SourceFile:107)\r\n\tat com.infostretch.automation.step.client.Scenario.execute(SourceFile:177)\r\n\tat com.infostretch.automation.step.client.Scenario.scenario(SourceFile:223)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:714)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:767)\r\n\tat org.testng.TestRunner.run(TestRunner.java:617)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:348)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:254)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1149)\r\n\tat org.testng.TestNG.run(TestNG.java:1057)\r\n\tat org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)\r\n\tat org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)\r\n\tat org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)\r\n"
+}

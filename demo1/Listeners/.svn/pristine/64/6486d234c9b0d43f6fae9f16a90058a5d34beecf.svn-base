@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ListenerSample.scenarios.suite1.bdd">
+  <parameter name="scenario.file.loc" value="scenarios/suite1.bdd"/>
+  <test name="BDD Test">
+    <method-selectors>
+      <method-selector>
+        <script language="beanshell">
+          <![CDATA[testngMethod.getMethodName().equalsIgnoreCase("WebDriver Listener Scenario")]]>
+        </script>
+      </method-selector>
+    </method-selectors>
+    <classes>
+      <class name="com.infostretch.automation.step.client.text.BDDTestFactory"/>
+    </classes>
+  </test> <!-- BDD Test -->
+</suite> <!-- ListenerSample.scenarios.suite1.bdd -->
